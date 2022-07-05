@@ -1,3 +1,38 @@
 .About {
+  display: flex;
+  flex-direction: column;
+  gap: 8vw;
+
+  .founder-cards {
+    display: flex;
+    gap: 2vw;
+  }
+
+  .history {
+    display: flex;
+    flex-direction: column;
+    gap: 8vw;
+  }
+
+  .timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4.875vw;
+
+    .line {
+      position: absolute;
+      height: calc(100% - 13vw);
+      width: 0.25vw;
+      background: white;
+      left: 13.2%;
+      top: 1.25vw;
+    }
+
+    .founder-cards {
+      display: flex;
+      gap: 2vw;
+    }
+  }
 
 }

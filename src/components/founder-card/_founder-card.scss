@@ -1,0 +1,43 @@
+@import 'src/assets/variables';
+
+.FounderCard {
+
+  .image {
+    width: 24.21875vw;
+    height: 16.09375vw;
+    background: #C4C4C4;
+    border-radius: 32px;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    color: $white;
+    background: linear-gradient(286.1deg, rgba(212, 212, 216, 0.3) 5.97%, rgba(212, 212, 216, 0.126) 104.79%);
+    backdrop-filter: blur(69px);
+
+    width: 23.125vw;
+    padding: 1.5vw 2vw;
+    border-radius: 20px;
+
+    margin-top: -8.854166666666666vw;
+    margin-left: 7.395833333333333vw;
+
+    .founder-name {
+      font-weight: 700;
+      font-size: 1.5vw;
+    }
+
+    .founder-role {
+      font-weight: 600;
+      font-size: 1vw;
+    }
+
+    .founder-description {
+      font-weight: 300;
+      font-size: 1vw;
+    }
+  }
+}

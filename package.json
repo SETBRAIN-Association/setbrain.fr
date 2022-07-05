@@ -24,7 +24,6 @@
     "postcss": "^8.4.14",
     "react": "*",
     "react-dom": "*",
-    "react-locomotive-scroll": "^0.2.0",
     "react-router-dom": "^6.3.0",
     "sass": "^1.52.3"
   },

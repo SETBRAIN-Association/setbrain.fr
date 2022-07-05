@@ -1,0 +1,78 @@
+@import 'src/assets/variables';
+
+.HistoryStep{
+  display: flex;
+  gap: 2.125vw;
+  color: $white;
+
+  .left {
+    display: flex;
+    height: fit-content;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 13.94vw;
+
+    .step-date {
+      width: max-content;
+      font-weight: 700;
+      font-size: 1.5vw;
+    }
+
+    .point {
+      display: block;
+      width: 0.875vw;
+      height: 0.875vw;
+      background: $white;
+      border-radius: 50%;
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 1.5vw;
+
+    .step-title {
+      position: relative;
+      width: fit-content;
+
+      span {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        h1 {
+          z-index: 2;
+          font-weight: 600;
+          font-size: 2.25vw;
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          background: $green;
+          height: 22px;
+          width: 102%;
+          top: 50%;
+          opacity: 0.48;
+          z-index: 1;
+          animation: spanIn .9s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+          animation-delay: .7s;
+        }
+      }
+    }
+
+    .step-description {
+      background: linear-gradient(286.1deg, rgba(212, 212, 216, 0.3) 5.97%, rgba(212, 212, 216, 0.126) 104.79%);
+      backdrop-filter: blur(69px);
+
+      font-weight: 300;
+      font-size: 1.125vw;
+
+      border-radius: 20px;
+      padding: 1.5vw 2vw;
+    }
+  }
+}
