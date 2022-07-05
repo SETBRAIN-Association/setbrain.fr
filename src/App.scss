@@ -1,0 +1,16 @@
+@import 'src/assets/fonts';
+
+.App {
+  background: radial-gradient(57.29% 82.46% at 111.39% 118.75%, rgba(63, 131, 248, 0.16) 0%, rgba(63, 131, 248, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(44.19% 81.44% at 91.18% 55.81%, rgba(255, 90, 31, 0.1) 0%, rgba(255, 90, 31, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(91.56% 181.07% at -41.56% 24.46%, rgba(14, 159, 110, 0.3) 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #18181B;
+  min-height: 100vh;
+}
+
+.router {
+  padding: 8.3vw 7.5625vw;
+}
+
+@media (max-width: 768px) {
+  .router {
+    padding: 14.680050188205772vh 7.5625vw;
+  }
+}

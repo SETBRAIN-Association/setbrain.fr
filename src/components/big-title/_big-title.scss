@@ -1,0 +1,74 @@
+@import 'src/assets/variables';
+
+.big-title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    color: $white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 4.5vw;
+    letter-spacing: -0.02em;
+    z-index: 1;
+    width: fit-content;
+
+    &:nth-child(1) {
+      animation: titleIn .8s .8s ease both, titleIn .8s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+      animation-delay: .2s;
+    }
+
+    &:nth-child(2) {
+      animation: titleIn .9s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+      animation-delay: .5s;
+    }
+  }
+
+  span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    &:before {
+      content: '';
+      position: absolute;
+      background: $green;
+      height: 41px;
+      width: 102%;
+      top: 50%;
+      opacity: 0.48;
+      z-index: -1;
+      animation: spanIn .9s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+      animation-delay: .7s;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .big-title {
+    h1 {
+      font-size: 4.51693851944793vh;
+      text-align: left;
+    }
+  }
+}
+
+@keyframes titleIn {
+  from {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes spanIn {
+  from {
+    clip-path: polygon(0 98%, 0 100%, 0 0, 0 0);
+  }
+  to {
+    clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 0);
+  }
+}

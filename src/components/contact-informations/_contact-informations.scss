@@ -1,0 +1,95 @@
+@import 'src/assets/variables';
+
+.contact-informations {
+  display: flex;
+  flex-direction: column;
+
+  .form {
+    color: $white;
+    background: linear-gradient(286.1deg, rgba(212, 212, 216, 0.3) 5.97%, rgba(212, 212, 216, 0.126) 104.79%);
+    backdrop-filter: blur(69px);
+    border-radius: 20px;
+    padding: 2vw;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-weight: 700;
+      font-size: 1.5vw;
+    }
+
+    p {
+      width: 21vw;
+      margin-top: 0.665vw;
+    }
+
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1.5vw;
+      gap: 0.75vw;
+
+      .media {
+        display: flex;
+        align-items: center;
+        gap: 0.75vw;
+
+        a {
+          color: $white;
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 1.125vw;
+        }
+
+        .icon {
+          width: 3vw;
+          height: 3vw;
+          display: block;
+          background-size: 100%;
+          background-position: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-informations {
+
+    //TODO: 3D with Threejs
+
+    .form {
+      padding: 2.66vh;
+      gap: 1.26vh;
+
+      h1 {
+        font-weight: 600;
+        font-size: 2.284263959390863vh;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 1.5228426395939085vh;
+        width: 33vh;
+      }
+
+      .contacts {
+        margin-top: 1.77vh;
+        gap: 1.52vh;
+
+        .media {
+          a {
+            font-weight: 600;
+            font-size: 1.5228426395939085vh;
+          }
+
+          .icon {
+            width: 3.045685279187817vh !important;
+            height: 3.045685279187817vh !important;
+          }
+        }
+      }
+    }
+  }
+}

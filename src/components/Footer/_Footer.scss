@@ -1,0 +1,115 @@
+@import "src/assets/variables";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  font-family: Sora, sans-serif;
+  color: $white;
+  background: $black;
+  padding: 2.375vw 7.625vw;
+  gap: 2.8125vw;
+
+  .top {
+    display: flex;
+
+    .links{
+      display: flex;
+      gap: 7.625vw;
+    }
+
+    .category {
+      display: flex;
+      flex-direction: column;
+      gap: 0.875vw !important;
+
+      h1 {
+        font-size: 1.5vw;
+        font-weight: 700;
+      }
+
+      ul {
+        font-size: 0.875vw;
+        font-weight: 400;
+      }
+
+      .sub-category {
+        display: flex;
+        flex-direction: column;
+        gap: 0.875vw !important;
+
+        h1 {
+          font-size: 1.125vw;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    gap: 0.875vw;
+    font-size: 0.75vw;
+    font-weight: 400;
+    align-items: center;
+
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+
+    .separator {
+      height: 1.5vw;
+      width: 0.125vw;
+      background: linear-gradient(rgba(212, 212, 216, 0.3), rgba(212, 212, 216, 0.126));
+      border-radius: 50px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer{
+    gap: 5.771643663739021vh;
+    padding: 3.0112923462986196vh 8.531994981179423vh;
+
+    h1 {
+      font-size: 2.985074626865672vh !important;
+    }
+
+    ul {
+      font-size: 1.7412935323383085vh !important;
+    }
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 5.771643663739021vh !important;
+  }
+
+  .category {
+    display: flex;
+    flex-direction: column;
+    gap: 3.0112923462986196vh !important;
+  }
+
+  .sub-category {
+    display: flex;
+    flex-direction: column;
+    gap: 3.0112923462986196vh !important;
+
+    h1 {
+      font-size: 2.2388059701492535vh !important;
+    }
+  }
+
+  .bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.492537313432836vh !important;
+
+    .separator {
+      height: 3.0112923462986196vh! important;
+      transform: rotateZ(90deg);
+    }
+  }
+}
