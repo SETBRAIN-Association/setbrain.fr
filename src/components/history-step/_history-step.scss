@@ -76,3 +76,44 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .HistoryStep {
+    justify-content: space-between;
+
+
+    .left {
+      width: 15vh;
+
+      .step-date {
+        font-weight: 600;
+        font-size: 1.25vh;
+      }
+
+      .point {
+        height: 1.6vh;
+        width: 1.6vh;
+      }
+    }
+
+    .right{
+      .step-description {
+        font-weight: 400;
+        font-size: 1.25vh;
+        padding: 1.88vh;
+       // width: 15.7vh;
+      }
+
+      .step-title {
+        span:before{
+          height: 1.15vh !important;
+        }
+
+        h1 {
+          font-weight: 600;
+          font-size: 1.88vh !important;
+        }
+      }
+    }
+  }
+}

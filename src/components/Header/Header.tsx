@@ -18,16 +18,16 @@ export const Header = ({}: HeaderProps) => {
       </Link>
       <nav className='menu'>
         <ul>
-          <Link className='link' to='projects'>
+          <Link className='link' to='projects' onClick={toggleMenu}>
             Nos Projets
           </Link>
-          <Link className='link' to='news'>
+          <Link className='link' to='news' onClick={toggleMenu}>
             Nos actualités
           </Link>
-          <Link className='link' to='about'>
+          <Link className='link' to='about' onClick={toggleMenu}>
             Qui sommes nous
           </Link>
-          <Link className='link' to='contact'>
+          <Link className='link' to='contact' onClick={toggleMenu}>
             Nous contacter
           </Link>
         </ul>

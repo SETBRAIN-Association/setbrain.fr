@@ -1,12 +1,19 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import './_contact-informations.scss';
+import gsap from 'gsap';
 
 export type ContactInformationsProps = {};
 
 export const ContactInformations = ({}: ContactInformationsProps) => {
+  const cardRef = useRef(null);
+
+  useEffect(() => {
+    gsap.from(cardRef.current,{ opacity: 0, marginTop: 0, duration: 1 });
+  });
+
   return (
     <div className='contact-informations'>
-      <div className='form'>
+      <div className='form' ref={cardRef}>
         <h1>Informations de contact</h1>
         <p>Notre équipe fait le maximum pour vous répondre sous 24H.</p>
         <div className='contacts'>

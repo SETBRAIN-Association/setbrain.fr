@@ -22,7 +22,7 @@
 
     .line {
       position: absolute;
-      height: calc(100% - 13vw);
+      height: calc(100% - 15.5vw);
       width: 0.25vw;
       background: white;
       left: 13.2%;
@@ -33,6 +33,20 @@
       display: flex;
       gap: 2vw;
     }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .founder-cards {
+    flex-direction: column;
+    gap: 4.7vh !important;
+  }
+
+  .line {
+    left: 9.5vh !important;
+    width: 0.4vh !important;
+    height: calc(100% - 22.5%) !important;
   }
 
 }
