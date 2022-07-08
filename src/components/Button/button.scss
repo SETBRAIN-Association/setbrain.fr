@@ -15,9 +15,12 @@
   width: fit-content;
 
   .icon {
-    font-size: 1.125vw;
     width: 1.125vw;
     height: 1.125vw;
+    mask-image: url('/fi-ss-interactive.svg');
+    background: $white;
+    mask-position: center;
+    mask-size: 100%;
   }
 
   &:hover {

@@ -13,7 +13,7 @@ export const Projects = ({}: ProjectsProps) => {
     <div className='Projects' data-scroll-section>
       <BigTitle position='left'>
         <h1>
-          <span>Projects</span>
+          <span>Nos projets</span>
         </h1>
       </BigTitle>
       <ProjectCard image='src/assets/images/Wiclass.svg' position='left' color='14, 159, 110'>

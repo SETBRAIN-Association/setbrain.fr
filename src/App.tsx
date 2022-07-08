@@ -11,9 +11,9 @@ import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import React from 'react';
 
-function ScrollToTop ({ children, path }) {
+function ScrollToTop (properties: any) {
   React.useLayoutEffect(() => window.scrollTo(0, 0), [location.pathname]);
-  return children;
+  return properties.children;
 }
 
 function App() {
