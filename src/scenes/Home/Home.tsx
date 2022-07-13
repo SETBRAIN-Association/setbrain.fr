@@ -16,7 +16,7 @@ export default function Home({}: HomeProps) {
       <Model model={'/lamp.gltf'} size={{ height: '84.375%', width: '27.9%', z: -6 }} position={{left: '75%', top: '50%'}} rotation={{x: -0.3, y: -0.2, z: -0.2}}></Model>
       <Model model={'/pc.gltf'} size={{ height: '75%', width: '24.8%', z: -3 }} position={{left: '10%', top: '-10%'}} rotation={{x: -0.2, y: 0.1, z: 0.3}}></Model>
       <BigTitle position='center' data-scroll-section>
-        <h1>Set Brain</h1>
+        <h1>Set Brain 2</h1>
         <h1>
           <span>Créons l&#39;impossible</span>
         </h1>
