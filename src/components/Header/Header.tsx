@@ -1,6 +1,6 @@
-import { Link } from '@reach/router';
 import React, { useState } from 'react';
-import './_Header.scss';
+import styles from './_Header.module.scss';
+import Link from "next/link";
 
 export type HeaderProps = {};
 
@@ -12,27 +12,27 @@ export const Header = ({}: HeaderProps) => {
   }
 
   return (
-    <div className={hamburgerActive ? 'active header' : 'header'}>
-      <Link className='logo' to='home'>
-        SetBrain.
+    <div className={hamburgerActive ? styles['active header'] : styles['header']}>
+      <Link href='home'>
+        <a className={styles['logo']}>SetBrain.</a>
       </Link>
-      <nav className='menu'>
+      <nav className={styles['menu']}>
         <ul>
-          <Link className='link' to='projects' onClick={toggleMenu}>
-            Nos Projets
+          <Link href='projects' onClick={toggleMenu}>
+            <a className={styles['link']}>Nos Projets</a>
           </Link>
-          <Link className='link' to='news' onClick={toggleMenu}>
-            Nos actualités
+          <Link href='news' onClick={toggleMenu}>
+            <a className={styles['link']}>Nos actualités</a>
           </Link>
-          <Link className='link' to='about' onClick={toggleMenu}>
-            Qui sommes nous
+          <Link href='about' onClick={toggleMenu}>
+            <a className={styles['link']}>Qui sommes nous</a>
           </Link>
-          <Link className='link' to='contact' onClick={toggleMenu}>
-            Nous contacter
+          <Link href='contact' onClick={toggleMenu}>
+            <a className={styles['link']}>Nous contacter</a>
           </Link>
         </ul>
       </nav>
-      <div className='hamburger' onClick={toggleMenu}>
+      <div className={styles['hamburger']} onClick={toggleMenu}>
         <span></span>
         <span></span>
         <span></span>

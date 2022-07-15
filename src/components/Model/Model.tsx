@@ -1,7 +1,6 @@
 import React from 'react';;
 import { Canvas} from '@react-three/fiber';
 import {Object} from '../Object/Object';
-import './_Model.scss';
 
 export type ModelProps = {
     model: string;

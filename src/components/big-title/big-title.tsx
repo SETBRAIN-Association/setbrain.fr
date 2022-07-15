@@ -1,5 +1,5 @@
 import React from 'react';
-import './_big-title.scss';
+import styles from './_big-title.module.scss';
 
 export type BigTitleProps = {
   children: React.ReactNode;
@@ -8,7 +8,7 @@ export type BigTitleProps = {
 
 export default function BigTitle({ children, position = 'center' }: BigTitleProps) {
   return (
-    <div className='big-title' style={{ alignItems: position }}>
+    <div className={styles['big-title']} style={{ alignItems: position }}>
       {children}
     </div>
   );

@@ -1,12 +1,12 @@
 import {Redirect, Router, useLocation} from '@reach/router';
-import Home from './scenes/Home/Home';
+import Index from './pages/Home';
 import { Header } from './components/Header/Header';
 import './App.scss';
 import { Footer } from './components/Footer/Footer';
-import { Projects } from './scenes/Projects/Projects';
-import { News } from './scenes/News/News';
-import { About } from './scenes/About/About';
-import { Contact } from './scenes/Contact/Contact';
+import { Projects } from './pages/Projects/Projects';
+import { News } from './pages/News/News';
+import { About } from './pages/About/About';
+import { Contact } from './pages/Contact/Contact';
 import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import React from 'react';
@@ -25,14 +25,14 @@ function App() {
       <Router className='router'>
         <ScrollToTop path='/'>
           <Redirect from='/' to='home'></Redirect>
-          <Home path='home'></Home>
+          <Index path='home'></Index>
           <Projects path='projects'></Projects>
           <News path='news'></News>
           <About path='about'></About>
           <Contact path='contact'></Contact>
         </ScrollToTop>
       </Router>
-      <Footer></Footer>
+
     </div>
   );
 }

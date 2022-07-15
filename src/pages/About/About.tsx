@@ -18,7 +18,7 @@ export const About = ({}: AboutProps) => {
         start: 'top center',
         end: '110% bottom',
         scrub: true,
-      }, height: 0, transition: 2 });
+      }, height: 0, transition: 0.5 });
   });
 
   return (
