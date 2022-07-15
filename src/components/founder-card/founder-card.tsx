@@ -13,10 +13,7 @@ export const FounderCard = ({image, founderName, children}: FounderCardProps) =>
   const textRef = useRef(null);
 
   useEffect(() => {
-    gsap.from(textRef.current,{ scrollTrigger: {
-        trigger: '.text',
-        start: 'bottom bottom'
-      }, opacity: 0, marginTop: 0, duration: 0.5 });
+    gsap.from(textRef.current,{ opacity: 0, marginTop: 0, duration: 0.5 });
   });
 
   return (
