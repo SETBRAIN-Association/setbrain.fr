@@ -58,13 +58,14 @@ export const Footer = ({}: FooterProps) => {
       </div>
       <div className={styles['bottom']}>
         <span> © Set Brain - 2022 </span>
+        <div className={styles['separator']}></div>
         <Link href='/support'>
           <a>
             Support
           </a>
         </Link>
+
         <div className={styles['separator']}></div>
-        <div className='separator'></div>
         <Link href='/confidentiality'>
           <a>
             Police de confidentialité
