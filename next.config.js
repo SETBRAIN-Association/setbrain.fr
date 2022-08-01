@@ -3,8 +3,11 @@ const path = require('path');
 
 // eslint-disable-next-line no-undef
 module.exports = {
-    sassOptions: {
-        // eslint-disable-next-line no-undef
-        includePaths: [path.join(__dirname, 'styles')]
-    }
+  sassOptions: {
+    // eslint-disable-next-line no-undef
+    includePaths: [path.join(__dirname, 'styles')],
+  },
+  images: {
+    domains: ['res.cloudinary.com'],
+  },
 };

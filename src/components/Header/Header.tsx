@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './_Header.module.scss';
-import Link from "next/link";
+import Link from 'next/link';
 
 export type HeaderProps = {};
 
@@ -13,26 +13,26 @@ export const Header = ({}: HeaderProps) => {
 
   return (
     <div className={hamburgerActive ? styles['active header'] : styles['header']}>
-      <Link href='home'>
+      <Link href='/'>
         <a className={styles['logo']}>SetBrain.</a>
       </Link>
       <nav className={styles['menu']}>
         <ul>
-          <Link href='projects' onClick={toggleMenu}>
+          <Link href='projects'>
             <a className={styles['link']}>Nos Projets</a>
           </Link>
-          <Link href='news' onClick={toggleMenu}>
+          <Link href='news'>
             <a className={styles['link']}>Nos actualités</a>
           </Link>
-          <Link href='about' onClick={toggleMenu}>
+          <Link href='about'>
             <a className={styles['link']}>Qui sommes nous</a>
           </Link>
-          <Link href='contact' onClick={toggleMenu}>
+          <Link href='contact'>
             <a className={styles['link']}>Nous contacter</a>
           </Link>
         </ul>
       </nav>
-      <div className={styles['hamburger']} onClick={toggleMenu}>
+      <div className={styles['hamburger']}>
         <span></span>
         <span></span>
         <span></span>

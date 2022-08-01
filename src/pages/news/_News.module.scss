@@ -1,0 +1,21 @@
+.articles {
+  display: flex;
+  flex-direction: column;
+
+  .article {
+    display: flex;
+    height: 26vw;
+    width: 80vw;
+
+    .image {
+      flex: 1;
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .texts {
+      flex: 1;
+    }
+  }
+}

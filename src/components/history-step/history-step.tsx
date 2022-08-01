@@ -1,6 +1,6 @@
-import React, {ReactNode, useEffect, useRef} from 'react';
-import './_history-step.scss';
-import gsap from "gsap";
+import React, { ReactNode, useEffect, useRef } from 'react';
+import styles from './_history-step.module.scss';
+import gsap from 'gsap';
 
 export type HistoryStepProps = {
   stepTitle: string;
@@ -8,27 +8,35 @@ export type HistoryStepProps = {
   children: ReactNode;
 };
 
-export const HistoryStep = ({stepTitle, stepDate, children}: HistoryStepProps) => {
-
+export const HistoryStep = ({ stepTitle, stepDate, children }: HistoryStepProps) => {
   const stepRef = useRef(null);
 
   useEffect(() => {
-    gsap.from(stepRef.current,{ scrollTrigger: {
+    gsap.from(stepRef.current, {
+      scrollTrigger: {
         trigger: stepRef.current,
         start: 'bottom bottom',
-      }, opacity: 0, marginTop: 10, duration: 0.5 });
+      },
+      opacity: 0,
+      marginTop: 10,
+      duration: 0.5,
+    });
   });
 
   return (
-      <div className="HistoryStep">
-        <div className="left">
-          <div className="step-date">{stepDate}</div>
-          <span className="point"></span>
-        </div>
-        <div className="right" ref={stepRef}>
-          <div className="step-title"><span><h1>{stepTitle}</h1></span></div>
-          <p className="step-description">{children}</p>
-        </div>
+    <div className={styles['HistoryStep']}>
+      <div className={styles['left']}>
+        <div className={styles['step-date']}>{stepDate}</div>
+        <span className={styles['point']}></span>
       </div>
+      <div className={styles['right']} ref={stepRef}>
+        <div className={styles['step-title']}>
+          <span>
+            <h1>{stepTitle}</h1>
+          </span>
+        </div>
+        <p className={styles['step-description']}>{children}</p>
+      </div>
+    </div>
   );
 };

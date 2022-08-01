@@ -1,6 +1,7 @@
-import React, {ReactNode, useEffect, useRef} from 'react';
-import './_project-card.scss';
-import gsap from "gsap";
+import React, { ReactNode, useEffect, useRef } from 'react';
+import Image from 'next/image';
+import styles from './_project-card.module.scss';
+import gsap from 'gsap';
 
 export type ProjectCardProps = {
   image: string;
@@ -13,20 +14,24 @@ export const ProjectCard = ({ children, image, position, color }: ProjectCardPro
   const projectCardRef = useRef(null);
 
   useEffect(() => {
-    gsap.from(projectCardRef.current,{ scrollTrigger: {
+    gsap.from(projectCardRef.current, {
+      scrollTrigger: {
         trigger: projectCardRef.current,
-        start: 'top 50%'
-      }, opacity: 0, marginTop: 30, duration: 0.5 });
+        start: 'top 50%',
+      },
+      marginTop: 30,
+      duration: 0.5,
+    });
   });
 
   return (
     <div
-      className='project-card'
+      className={styles['project-card']}
       style={{ justifyContent: position, boxShadow: '0 0 124px rgba(' + color + ', 0.24)' }}
       ref={projectCardRef}
     >
-      <img className='background' src={image}></img>
-      <div className='inner'>{children}</div>
+      <Image className={styles['background']} src={image} layout='fill'></Image>
+      <div className={styles['inner']}>{children}</div>
     </div>
   );
 };
