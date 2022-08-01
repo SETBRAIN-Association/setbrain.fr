@@ -22,11 +22,13 @@
 
     .line {
       position: absolute;
-      height: calc(100% - 15.8vw);
+      height: calc(100% - 13vw);
       width: 0.25vw;
       background: white;
-      left: 13.2%;
+      left: 15.6%;
       top: 1.25vw;
+      border-radius: 50px;
+      transition: 2s;
     }
 
     .founder-cards {

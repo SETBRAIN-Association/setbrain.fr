@@ -8,6 +8,8 @@
   background: $black;
   padding: 2.375vw 7.625vw;
   gap: 2.8125vw;
+  width: 100%;
+  box-sizing: border-box;
 
   .top {
     display: flex;
