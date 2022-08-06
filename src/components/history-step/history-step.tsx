@@ -13,10 +13,6 @@ export const HistoryStep = ({ stepTitle, stepDate, children }: HistoryStepProps)
 
   useEffect(() => {
     gsap.from(stepRef.current, {
-      scrollTrigger: {
-        trigger: stepRef.current,
-        start: 'bottom bottom',
-      },
       opacity: 0,
       marginTop: 10,
       duration: 0.5,
@@ -29,7 +25,7 @@ export const HistoryStep = ({ stepTitle, stepDate, children }: HistoryStepProps)
         <div className={styles['step-date']}>{stepDate}</div>
         <span className={styles['point']}></span>
       </div>
-      <div className={styles['right']} ref={stepRef}>
+      <div className={styles['right']} ref={stepRef} data-scroll='true' data-scroll-speed='0.5'>
         <div className={styles['step-title']}>
           <span>
             <h1>{stepTitle}</h1>

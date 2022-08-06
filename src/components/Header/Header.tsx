@@ -12,22 +12,22 @@ export const Header = ({}: HeaderProps) => {
   }
 
   return (
-    <div className={hamburgerActive ? styles['active header'] : styles['header']}>
+    <div className={hamburgerActive ? styles.active + ' ' + styles.header : styles.header} onClick={toggleMenu}>
       <Link href='/'>
         <a className={styles['logo']}>SetBrain.</a>
       </Link>
       <nav className={styles['menu']}>
         <ul>
-          <Link href='projects'>
+          <Link href='/projects'>
             <a className={styles['link']}>Nos Projets</a>
           </Link>
-          <Link href='news'>
+          <Link href='/news'>
             <a className={styles['link']}>Nos actualités</a>
           </Link>
-          <Link href='about'>
+          <Link href='/about'>
             <a className={styles['link']}>Qui sommes nous</a>
           </Link>
-          <Link href='contact'>
+          <Link href='/contact'>
             <a className={styles['link']}>Nous contacter</a>
           </Link>
         </ul>

@@ -15,9 +15,8 @@
   width: fit-content;
 
   .icon {
-    width: 1.125vw;
-    height: 1.125vw;
-    mask-image: url('/fi-ss-interactive.svg');
+    width: 1.5vw;
+    height: 1.5vw;
     background: $white;
     mask-position: center;
     mask-size: 100%;
@@ -26,11 +25,21 @@
   &:hover {
     opacity: 0.9;
   }
+
+  &:disabled {
+    opacity: 0.5;
+    box-shadow: none;
+  }
 }
 
 .primary {
   background: $blue;
-  color: #F3F4F6;
+  color: $white;
+
+  &:disabled {
+    background: #3671d5;
+    color: #c1bbbb;
+  }
 }
 
 @media (max-width: 768px) {

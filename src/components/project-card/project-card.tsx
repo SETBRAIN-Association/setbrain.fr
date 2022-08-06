@@ -29,6 +29,7 @@ export const ProjectCard = ({ children, image, position, color }: ProjectCardPro
       className={styles['project-card']}
       style={{ justifyContent: position, boxShadow: '0 0 124px rgba(' + color + ', 0.24)' }}
       ref={projectCardRef}
+      data-scroll='true' data-scroll-speed='0.5'
     >
       <Image className={styles['background']} src={image} layout='fill'></Image>
       <div className={styles['inner']}>{children}</div>

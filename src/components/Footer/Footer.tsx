@@ -2,55 +2,53 @@ import React from 'react';
 import styles from './_Footer.module.scss';
 import Link from 'next/link';
 
-export type FooterProps = {};
-
-export const Footer = ({}: FooterProps) => {
+export const Footer = () => {
   return (
-    <div className={styles['footer']}>
+    <div className={styles['footer']} data-scroll-section='true'>
       <div className={styles['top']}>
         <div className={styles['links']}>
           <div className={styles['category']}>
             <h1>Projets</h1>
             <ul>
-              <li>Wiclass</li>
-              <li>DevsNews</li>
+              <li><a href="">Wiclass</a></li>
+              <li><a href="">DevsNews</a></li>
             </ul>
           </div>
           <div className={styles['category']}>
             <h1>Contact</h1>
             <ul>
-              <li>Email</li>
-              <li>Discord</li>
-              <li>Twitter</li>
+              <li><a href="">Email</a></li>
+              <li><a href="">Discord</a></li>
+              <li><a href="">Twitter</a></li>
             </ul>
           </div>
           <div className={styles['category']}>
             <h1>Réseaux</h1>
             <ul>
-              <li>Discord</li>
-              <li>Instagram</li>
-              <li>Twitter</li>
-              <li>Youtube</li>
-              <li>Dribbble</li>
-              <li>Facebook</li>
+              <li><a href="">Discord</a></li>
+              <li><a href="">Instagram</a></li>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">Youtube</a></li>
+              <li><a href="">Dribbble</a></li>
+              <li><a href="">Facebook</a></li>
             </ul>
           </div>
           <div className={styles['category']}>
             <h1>Réseaux personnels</h1>
-            <div className={styles['sun-category']}>
+            <div className={styles['sub-category']}>
               <h1>Syd.C</h1>
               <ul>
-                <li>Instagram</li>
-                <li>Twitter</li>
-                <li>Youtube</li>
-                <li>Github</li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">Youtube</a></li>
+                <li><a href="">Github</a></li>
               </ul>
             </div>
             <div className={styles['sub-category']}>
               <h1>Emmanuel.L</h1>
               <ul>
-                <li>Twitter</li>
-                <li>Github</li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">Github</a></li>
               </ul>
             </div>
           </div>
