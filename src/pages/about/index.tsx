@@ -1,32 +1,39 @@
-import React, { useLayoutEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import styles from './_About.module.scss';
 import BigTitle from '../../components/big-title/big-title';
 import { FounderCard } from '../../components/founder-card/founder-card';
 import { HistoryStep } from '../../components/history-step/history-step';
 import gsap from 'gsap';
+import { useLocomotiveScroll } from 'react-locomotive-scroll';
 
-export type AboutProps = {
-  path: string;
-};
-
-export default function About({}: AboutProps) {
+export default function About() {
   const lineRef = useRef(null);
-  useLayoutEffect(() => {
-    gsap.from(lineRef.current, {
-      scrollTrigger: {
-        trigger: lineRef.current,
-        start: 'top center',
-        end: '80% center',
-        scrub: true,
-      },
-      height: 0,
-      transition: 2,
-    });
-  });
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        console.log(entry.intersectionRatio);
+        if (entry.intersectionRatio > 0 ) {
+          gsap.to(lineRef.current, {
+            height: 'calc(100% - 13.5vw)',
+            transition: 2,
+          });
+        }else {
+          gsap.to(lineRef.current, {
+            height: '0',
+            transition: 1,
+          });
+        }
+      }, { rootMargin: '0px 0px -100px 0px' }
+    );
+
+    lineRef.current && observer.observe(lineRef.current);
+  }, []);
+
 
   return (
-    <div className={styles['About']}>
-      <BigTitle position='left' data-scroll-section>
+    <div className={styles['About']} data-scroll-section='true'>
+      <BigTitle position='left'>
         <h1>
           <span>Qui sommes nous ?</span>
         </h1>

@@ -79,11 +79,10 @@
 
 @media (max-width: 768px) {
   .HistoryStep {
-    justify-content: space-between;
-
+    gap: 1vh;
 
     .left {
-      width: 15vh;
+      width: 10.5vh;
 
       .step-date {
         font-weight: 600;
@@ -91,8 +90,8 @@
       }
 
       .point {
-        height: 1.6vh;
-        width: 1.6vh;
+        height: 1.2vh;
+        width: 1.2vh;
       }
     }
 

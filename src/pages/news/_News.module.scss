@@ -3,16 +3,17 @@
 .News {
   display: flex;
   flex-direction: column;
-  gap: 96px;
+  gap: 5vw;
+  width: min-content;
+  padding-bottom: 8vw;
 }
 
 
 .last-article {
   display: flex;
-  gap: 60px;
+  gap: 3.75vw;
   height: 26vw;
   width: 80vw;
-  cursor: pointer;
 
   .image {
     flex: 1;
@@ -25,31 +26,45 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25vw;
 
     span {
       font-weight: 300;
-      font-size: 18px;
+      font-size: 1.125vw;
       color: $white;
     }
 
     h1 {
       font-weight: 600;
-      font-size: 64px;
-      line-height: 81px;
+      font-size: 4vw;
+      line-height: 5vw;
       color: $white;
+      position: relative;
+      width: fit-content;
+      cursor: pointer;
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 0px;
+        height: 0.3vw;
+        background: $white;
+        bottom: -0.2vw;
+        transition: 0.5s;
+      }
     }
 
     p {
       font-weight: 600;
-      font-size: 18px;
-      line-height: 23px;
+      font-size: 1.125vw;
+      line-height: 1.4;
       color: $white;
-      width: 345px;
+      width: 21.5vw;
     }
   }
 
-  &:hover {
+  h1:hover {
+    /*
     .image:before {
       content: 'Lire l\'article';
       display: flex;
@@ -63,6 +78,12 @@
       color: white;
       font-size: xx-large;
     }
+
+     */
+
+    &:before {
+      width: 100%;
+    }
   }
 }
 
@@ -70,5 +91,81 @@
   display: flex;
   width: 80vw;
   flex-wrap: wrap;
-  gap: 80px;
+  gap: 5vw;
+}
+
+@media (max-width: 768px) {
+  .last-article {
+    position: relative;
+    height: 50vh;
+    display: grid;
+    place-items: flex-end flex-start;
+    overflow: hidden;
+    border-radius: 20px;
+
+
+    .texts {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25vw;
+      padding: 20px;
+      z-index: 3;
+
+      span {
+        font-weight: 300;
+        font-size: 2.2vh;
+        line-height: 2.8vh;
+        color: $white;
+      }
+
+      h1 {
+        font-weight: 700;
+        font-size: 2.9vh;
+        line-height: 3.7vh;
+        color: $white;
+        position: relative;
+        width: fit-content;
+        cursor: pointer;
+
+        &:before {
+          content: '';
+          position: absolute;
+          width: 0px;
+          height: 0.3vw;
+          background: $white;
+          bottom: -0.2vw;
+          transition: 0.5s;
+        }
+      }
+
+      p {
+        font-weight: 300;
+        font-size: 2.2vh;
+        line-height: 2.8vh;
+        color: $white;
+        width: 100%;
+      }
+    }
+
+    .image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:before{
+      content: '';
+      z-index: 2;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 50%;
+      background: linear-gradient(transparent, rgba(black, 0.8));
+    }
+  }
+
+  .articles {
+    flex-direction: column;
+  }
 }

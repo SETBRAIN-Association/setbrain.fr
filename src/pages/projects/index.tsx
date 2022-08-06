@@ -29,7 +29,7 @@ export default function Projects({}: ProjectsProps) {
           révolutionner l’education. Il s’agira très simplement d’une interface, entièrement en
           ligne, d’administration et de gestion dédiée aux enseignement secondaire.
         </div>
-        <Button icon='fi-ss-interactive' label='En savoir plus'></Button>
+        <Button icon='fi-sr-interactive' label='En savoir plus' enabled={false} tooltip='Bientôt disponible !'></Button>
       </ProjectCard>
       <ProjectCard image='/Devsnews.svg' position='right' color='239, 203, 104'>
         <div className={projects['description']}>
@@ -43,7 +43,7 @@ export default function Projects({}: ProjectsProps) {
           site web sur lequel vous retrouverez des articles, des rediffusions de nos lives et des
           best of !
         </div>
-        <Button icon='fi-ss-interactive' label='En savoir plus'></Button>
+        <Button icon='fi-sr-interactive' label='En savoir plus'></Button>
       </ProjectCard>
     </div>
   );

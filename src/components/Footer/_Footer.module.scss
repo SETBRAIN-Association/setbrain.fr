@@ -10,6 +10,7 @@
   gap: 2.8125vw;
   width: 100%;
   box-sizing: border-box;
+  position: relative;
 
   .top {
     display: flex;
@@ -29,11 +30,17 @@
         font-weight: 700;
       }
 
-      ul li {
+      ul li a {
         font-size: 0.875vw;
         font-weight: 400;
         line-height: 25px;
         cursor: pointer;
+        color: $white;
+        text-decoration: none;
+
+        &:hover {
+          color: #959595;
+        }
       }
 
       .sub-category {
@@ -79,7 +86,7 @@
       font-size: 2.985074626865672vh !important;
     }
 
-    ul li{
+    ul li a{
       font-size: 1.7412935323383085vh !important;
     }
   }

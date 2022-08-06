@@ -3,6 +3,7 @@
 .contact-informations {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   .form {
     color: $white;

@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next/types';
 import { Article } from '../../../types/Article';
-import { connectToDatabase } from '../../../../utils/database';
+import { connectToDatabase } from '../../../utils/database';
 import { ObjectId } from 'mongodb';
 
 type ResponseData = Article;

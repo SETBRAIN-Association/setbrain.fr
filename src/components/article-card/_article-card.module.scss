@@ -3,13 +3,12 @@
 .article-card {
   display: flex;
   flex-direction: column;
-  gap: 42px;
-  width: 346px;
-  cursor: pointer;
+  gap: 2.6vw;
+  width: 21.5vw;
 
   .image {
-    width: 346px;
-    height: 293px;
+    width: 21.5vw;
+    height: 18.3vw;
     position: relative;
     border-radius: 20px;
     overflow: hidden;
@@ -19,31 +18,46 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.5vw;
 
     span {
       font-weight: 300;
-      font-size: 18px;
-      line-height: 23px;
+      font-size: 1.125vw;
+      line-height: 1.4vw;
       color: $white;
     }
 
     h1 {
       font-weight: 600;
-      font-size: 36px;
-      line-height: 45px;
+      font-size: 2.25vw;
+      line-height: 2.8vw;
       color: $white;
+      position: relative;
+      width: fit-content;
+      cursor: pointer;
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 0px;
+        height: 0.2vw;
+        background: $white;
+        bottom: -0.2vw;
+        transition: 0.5s;
+      }
+
     }
 
     p {
       font-weight: 600;
-      font-size: 18px;
-      line-height: 23px;
+      font-size: 1.125vw;
+      line-height: 1.4vw;
       color: $white;
     }
   }
 
-  &:hover {
+  h1:hover {
+    /*
     .image:before {
       content: 'Lire l\'article';
       display: flex;
@@ -55,6 +69,60 @@
       height: 100%;
       z-index: 10;
       color: white;
+      font-size: xx-large;
+    }
+
+     */
+
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .article-card {
+    flex-direction: row;
+    height: fit-content;
+    width: 100% !important;
+    box-sizing: border-box;
+
+    background: linear-gradient(286.1deg, rgba(212, 212, 216, 0.3) 5.97%, rgba(212, 212, 216, 0.126) 104.79%);
+    border-radius: 18px;
+    padding: 12px;
+    gap: 9px;
+    justify-content: center;
+    align-items: center;
+
+    .texts {
+      gap: 4px;
+
+      span {
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 140%;
+      }
+
+      h1 {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 23px;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 140%;
+      }
+    }
+
+    .image {
+      width: 86px;
+      height: 86px;
+
+      box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.5);
+
+      border-radius: 16px;
     }
   }
 }

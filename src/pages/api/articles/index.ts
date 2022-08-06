@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next/types';
-import { connectToDatabase } from '../../../../utils/database';
+import { connectToDatabase } from '../../../utils/database';
 import { Article } from '../../../types/Article';
 
 type ResponseData = {
