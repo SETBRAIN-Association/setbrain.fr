@@ -16,7 +16,6 @@ export default function Index() {
     });
   });
 
-
   return (
     <div className={styles['Home']} data-scroll-section="true">
       <Head>

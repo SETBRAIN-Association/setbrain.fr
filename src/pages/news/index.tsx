@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { convertToDateString } from '../../utils/time';
 import { ArticleCard } from '../../components/article-card/article-card';
 import Link from 'next/link';
+import Head from 'next/head';
 
 export type NewsProps = {
   articles: Article[];
@@ -12,7 +13,10 @@ export type NewsProps = {
 
 export default function News({ articles }: NewsProps) {
   return (
-    <div className={styles['News']} data-scroll-section>
+    <div className={styles['News']} data-scroll-section='true'>
+      <Head>
+        <title>Actualités</title>
+      </Head>
       <BigTitle position='left'>
         <h1>
           <span>Nos actualités</span>

@@ -5,10 +5,14 @@ import BigTitle from '../../components/big-title/big-title';
 import { ProjectCard } from '../../components/project-card/project-card';
 import { Button } from '../../components/Button/Button';
 import Image from 'next/image';
+import Head from 'next/head';
 
 export default function Projects() {
   return (
-    <div className={styles['Projects']} data-scroll-section>
+    <div className={styles['Projects']} data-scroll-section='true'>
+      <Head>
+        <title>Nos projets</title>
+      </Head>
       <BigTitle position='left'>
         <h1>
           <span>Nos projets</span>

@@ -39,6 +39,7 @@ specifiers:
   prettier: ^2.7.1
   react: '*'
   react-dom: '*'
+  react-ga4: ^1.4.1
   react-locomotive-scroll: ^0.2.2
   sass: ^1.52.3
   three: ^0.142.0
@@ -61,6 +62,7 @@ dependencies:
   postcss: 8.4.14
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-ga4: 1.4.1
   react-locomotive-scroll: 0.2.2_hykbpaxy57vzhlweyqfpg73kw4
   sass: 1.52.3
   three: 0.142.0
@@ -10307,6 +10309,10 @@ packages:
       react-dom: 18.2.0_react@18.2.0
       react-is: 17.0.2
     dev: true
+
+  /react-ga4/1.4.1:
+    resolution: {integrity: sha512-ioBMEIxd4ePw4YtaloTUgqhQGqz5ebDdC4slEpLgy2sLx1LuZBC9iYCwDymTXzcntw6K1dHX183ulP32nNdG7w==}
+    dev: false
 
   /react-inspector/5.1.1_react@18.2.0:
     resolution: {integrity: sha512-GURDaYzoLbW8pMGXwYPDBIv6nqei4kK7LPRZ9q9HCZF54wqXz/dnylBp/kfE9XmekBhHvLDdcYeyIwSrvtOiWg==}
