@@ -7,12 +7,16 @@
   color: $white;
   width: 100%;
   backdrop-filter: blur(60px);
+  background: rgba($black, 0.5);
 
   padding: 1.975vw 3.375vw;
   box-sizing: border-box;
   justify-content: center;
   position: fixed;
   z-index: 100;
+  top: 0;
+
+  border-bottom: 1px solid rgba(219, 219, 219, 0.2);
 
   .logo {
     font-family: Poppins, sans-serif;
