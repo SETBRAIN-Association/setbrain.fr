@@ -3,7 +3,7 @@ import styles from './_article-card.module.scss';
 import { Article } from '../../types/Article';
 import Image from 'next/image';
 import { convertToDateString } from '../../utils/time';
-import Link from "next/link";
+import Link from 'next/link';
 
 export type ArticleCardProps = {
   article: Article

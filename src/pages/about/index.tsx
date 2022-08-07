@@ -66,7 +66,7 @@ export default function About() {
           <div className={styles['line']} ref={lineRef}></div>
           <HistoryStep stepTitle='Nos débuts ...' stepDate='Janvier 2019'>
             Alors qu’ils ne sont qu’en cinquième Syd Chauviteau et Emmanuel Linguet, voient déjà les
-            choses en grand. C’est par cette pensé que Setbrain naîtra, c’est lors d'un travail
+            choses en grand. C’est par cette pensé que Setbrain naîtra, c’est lors d&apos;un travail
             somme toute normal pour 2 collégiens qu’ils leurs est venues à l’idée de créer un jeu
             vidéo pour celui-ci. Et c’est quelques semaines plus tard, en voyant la réussite de
             leurs collaborations, qu’ils décidèrent de continuer dans l’optique de toujours
@@ -92,7 +92,7 @@ export default function About() {
             Aujourd’hui près, de 3 ans après sa création, Setbrain fait tout pour mener a bien
             Wiclass et cherche aussi un maximum de personnes avec des connaissances et compétences à
             nous porter donc si vous êtes intéressés à faire cela en bénévoles et que vous
-            travaillez ou que vous êtes passionnés par un métier dit "du web" ( développeur
+            travaillez ou que vous êtes passionnés par un métier dit &quot;du web&quot; ( développeur
             front/back, designer UX/UI, communicant digital... ) vous pouvez nous contacter ici..
           </HistoryStep>
         </div>

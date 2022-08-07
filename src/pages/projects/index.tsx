@@ -6,11 +6,7 @@ import { ProjectCard } from '../../components/project-card/project-card';
 import { Button } from '../../components/Button/Button';
 import Image from 'next/image';
 
-export type ProjectsProps = {
-  path: string;
-};
-
-export default function Projects({}: ProjectsProps) {
+export default function Projects() {
   return (
     <div className={styles['Projects']} data-scroll-section>
       <BigTitle position='left'>

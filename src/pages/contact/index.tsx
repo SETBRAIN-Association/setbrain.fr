@@ -3,11 +3,7 @@ import styles from './_Contact.module.scss';
 import BigTitle from '../../components/big-title/big-title';
 import { ContactInformations } from '../../components/contact-informations/contact-informations';
 
-export type ContactProps = {
-  path: string;
-};
-
-export default function Index({}: ContactProps) {
+export default function Index() {
   return (
     <div className={styles['Contact']} data-scroll-section>
       <BigTitle position='left'>

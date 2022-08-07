@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import styles from './_Header.module.scss';
 import Link from 'next/link';
 
-export type HeaderProps = {};
-
-export const Header = ({}: HeaderProps) => {
+export const Header = () => {
   const [hamburgerActive, setHamburgerActive] = useState(false);
 
   function toggleMenu() {

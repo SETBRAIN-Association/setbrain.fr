@@ -1,11 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import styles from './_contact-informations.module.scss';
 import gsap from 'gsap';
-import { Model } from "../Model/Model";
+import { Model } from '../Model/Model';
 
-export type ContactInformationsProps = {};
-
-export const ContactInformations = ({}: ContactInformationsProps) => {
+export const ContactInformations = () => {
   const cardRef = useRef(null);
 
   useEffect(() => {
