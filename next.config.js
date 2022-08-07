@@ -5,9 +5,12 @@ const path = require('path');
 module.exports = {
   sassOptions: {
     // eslint-disable-next-line no-undef
-    includePaths: [path.join(__dirname, 'styles')],
+    includePaths: [path.join(__dirname, 'styles')]
   },
   images: {
-    domains: ['res.cloudinary.com'],
+    domains: ['res.cloudinary.com']
   },
+  eslint: {
+    ignoreDuringBuild: true
+  }
 };
