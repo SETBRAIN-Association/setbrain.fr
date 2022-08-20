@@ -18,19 +18,6 @@ export default function Projects() {
           <span>Nos projets</span>
         </h1>
       </BigTitle>
-      <ProjectCard image='/Wiclass.svg' position='left' color='14, 159, 110'>
-        <div className={projects['logo']}>
-          <div style={{ width: '20vw', height: '5vw', position: 'relative' }}>
-            <Image src='/Wiclass-logo.svg' alt='Wiclass Logo' layout='fill'></Image>
-          </div>
-        </div>
-        <div className={projects['description']}>
-          Wiclass est notre premier projet très ambitieux, avec celui-ci nous avons comme but de
-          révolutionner l’education. Il s’agira très simplement d’une interface, entièrement en
-          ligne, d’administration et de gestion dédiée aux enseignement secondaire.
-        </div>
-        <Button icon='fi-sr-interactive' label='En savoir plus' enabled={false} tooltip='Bientôt disponible !'></Button>
-      </ProjectCard>
       <ProjectCard image='/Devsnews.svg' position='right' color='239, 203, 104'>
         <div className={projects['description']}>
           <div style={{ width: '20vw', height: '5vw', position: 'relative' }}>
@@ -44,6 +31,19 @@ export default function Projects() {
           best of !
         </div>
         <Button icon='fi-sr-interactive' label='En savoir plus'></Button>
+      </ProjectCard>
+      <ProjectCard image='/Wiclass.svg' position='left' color='14, 159, 110'>
+        <div className={projects['logo']}>
+          <div style={{ width: '20vw', height: '5vw', position: 'relative' }}>
+            <Image src='/Wiclass-logo.svg' alt='Wiclass Logo' layout='fill'></Image>
+          </div>
+        </div>
+        <div className={projects['description']}>
+          Wiclass est notre premier projet très ambitieux, avec celui-ci nous avons comme but de
+          révolutionner l’education. Il s’agira très simplement d’une interface, entièrement en
+          ligne, d’administration et de gestion dédiée aux enseignement secondaire.
+        </div>
+        <Button icon='fi-sr-interactive' label='En savoir plus' enabled={false} tooltip='Bientôt disponible !'></Button>
       </ProjectCard>
     </div>
   );

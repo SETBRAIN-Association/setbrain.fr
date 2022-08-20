@@ -46,7 +46,7 @@
       &:before {
         content: '';
         position: absolute;
-        width: 0px;
+        width: 0;
         height: 0.3vw;
         background: $white;
         bottom: -0.2vw;
@@ -130,7 +130,7 @@
         &:before {
           content: '';
           position: absolute;
-          width: 0px;
+          width: 0;
           height: 0.3vw;
           background: $white;
           bottom: -0.2vw;
