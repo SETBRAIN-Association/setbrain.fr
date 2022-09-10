@@ -29,7 +29,10 @@
         "spaced-comment": "error",
         "quotes": ["error", "single"],
         "no-duplicate-imports": "error",
-        "semi": ["error", "always"]
+        "semi": ["error", "always"],
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "react/no-unknown-property": "off"
     },
     "settings": {
         "import/resolver": {
