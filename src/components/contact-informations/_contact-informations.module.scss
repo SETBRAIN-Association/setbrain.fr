@@ -57,8 +57,12 @@
 
 @media (max-width: 768px) {
   .contact-informations {
+    justify-content: center;
+    align-items: center;
 
-    //TODO: 3D with Threejs
+    .illustration {
+      display: none;
+    }
 
     .form {
       padding: 2.66vh;
