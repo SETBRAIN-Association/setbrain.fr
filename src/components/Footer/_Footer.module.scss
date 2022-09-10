@@ -43,6 +43,11 @@
         }
       }
 
+      .disabled{
+        color: #959595;
+        cursor: not-allowed;
+      }
+
       .sub-category {
         display: flex;
         flex-direction: column;

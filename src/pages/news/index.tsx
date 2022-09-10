@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { convertToDateString } from '../../utils/time';
 import { ArticleCard } from '../../components/article-card/article-card';
 import Link from 'next/link';
+import Head from 'next/head';
 
 export type NewsProps = {
   articles: Article[];
@@ -12,29 +13,31 @@ export type NewsProps = {
 
 export default function News({ articles }: NewsProps) {
   return (
-    <div className={styles['News']} data-scroll-section>
+    <div className={styles['News']} data-scroll-section='true'>
+      <Head>
+        <title>Actualités | Set Brain</title>
+      </Head>
       <BigTitle position='left'>
         <h1>
           <span>Nos actualités</span>
         </h1>
       </BigTitle>
 
-        <div className={styles['last-article']} data-scroll='true' data-scroll-speed='0.5'>
-          <div className={styles['image']}>
-            <Image src={articles[0].image} layout='fill' objectFit='cover'></Image>
-          </div>
-          <div className={styles['texts']}>
-            <span>{convertToDateString(articles[0].date)}</span>
-            <Link href={'news/' + articles[0]._id}>
-              <h1>{articles[0].title}</h1>
-            </Link>
-            <p>{articles[0].description}</p>
-          </div>
+      <div className={styles['last-article']} data-scroll='true' data-scroll-speed='0.5'>
+        <div className={styles['image']}>
+          <Image src={articles[0].image} layout='fill' objectFit='cover'></Image>
         </div>
-
+        <div className={styles['texts']}>
+          <span>{convertToDateString(articles[0].date)}</span>
+          <Link href={'news/' + articles[0]._id}>
+            <h1>{articles[0].title}</h1>
+          </Link>
+          <p>{articles[0].description}</p>
+        </div>
+      </div>
 
       <div className={styles['articles']}>
-        {articles.map(article => (
+        {articles.map((article) => (
           <ArticleCard key={article._id} article={article}></ArticleCard>
         ))}
       </div>

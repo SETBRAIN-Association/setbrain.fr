@@ -8,51 +8,22 @@
     display: flex;
     gap: 2vw;
   }
-
-  .history {
-    display: flex;
-    flex-direction: column;
-    gap: 8vw;
-  }
-
-  .timeline {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 4.875vw;
-
-    .line {
-      position: absolute;
-      height: 0;
-      width: 0.20vw;
-      background: white;
-      left: 15.6%;
-      top: 1.25vw;
-      border-radius: 50px;
-      transition: 2s;
-    }
-
-    .founder-cards {
-      display: flex;
-      gap: 2vw;
-    }
-  }
 }
 
 @media (max-width: 768px) {
-
-  .timeline {
-    align-items: center;
-
-    .line {
-      left: 9.8vh !important;
-      width: 0.3vh !important;
-      height: calc(100% - 21%) !important;
-    }
-  }
-
   .founder-cards {
     flex-direction: column;
     gap: 4.7vh !important;
+  }
+}
+
+@media (min-width: 1921px) {
+  .About {
+    width: 1720px;
+  }
+
+  .founder-cards {
+    gap: 52px !important;
+    justify-content: center;
   }
 }

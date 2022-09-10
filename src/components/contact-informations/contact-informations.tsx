@@ -1,14 +1,21 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './_contact-informations.module.scss';
 import gsap from 'gsap';
-import { Model } from "../Model/Model";
+import { Model } from '../Model/Model';
 
-export type ContactInformationsProps = {};
-
-export const ContactInformations = ({}: ContactInformationsProps) => {
+export const ContactInformations = () => {
   const cardRef = useRef(null);
 
+  const [isWide, setIsWide] = useState(false);
+
   useEffect(() => {
+    if (window.innerWidth > 1920) setIsWide(true);
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 1920) setIsWide(true);
+      else setIsWide(false);
+    });
+
     gsap.from(cardRef.current, { opacity: 0, marginTop: 0, duration: 1 });
   });
 
@@ -53,20 +60,41 @@ export const ContactInformations = ({}: ContactInformationsProps) => {
         </div>
       </div>
       <div className={styles['illustration']}>
-        <Model
-          model={'/pc.gltf'}
-          size={{ height: '100%', width: '50%', z: -2 }}
-          position={{ left: '30%', top: '-10%' }}
-          rotation={{ x: -0.3, y: 0.2, z: 0.1 }}
-          scrollSpeed={1}
-        ></Model>
-        <Model
-          model={'/rocket.gltf'}
-          size={{ height: '110%', width: '50%', z: -5 }}
-          position={{ left: '65%', top: '0%' }}
-          rotation={{ x: -0.3, y: -0.2, z: -0.2 }}
-          scrollSpeed={2.5}
-        ></Model>
+        {isWide ? (
+          <>
+            <Model
+              model={'/pc.gltf'}
+              size={{ height: '70%', width: '40%', z: -2 }}
+              position={{ left: '50%', top: '-10%' }}
+              rotation={{ x: -0.3, y: 0.2, z: 0.1 }}
+              scrollSpeed={1}
+            ></Model>
+            <Model
+              model={'/rocket.gltf'}
+              size={{ height: '80%', width: '40%', z: -5 }}
+              position={{ left: '75%', top: '30%' }}
+              rotation={{ x: -0.3, y: -0.2, z: -0.2 }}
+              scrollSpeed={2.5}
+            ></Model>
+          </>
+        ) : (
+          <>
+            <Model
+              model={'/pc.gltf'}
+              size={{ height: '100%', width: '50%', z: -2 }}
+              position={{ left: '30%', top: '-10%' }}
+              rotation={{ x: -0.3, y: 0.2, z: 0.1 }}
+              scrollSpeed={1}
+            ></Model>
+            <Model
+              model={'/rocket.gltf'}
+              size={{ height: '110%', width: '50%', z: -5 }}
+              position={{ left: '65%', top: '0%' }}
+              rotation={{ x: -0.3, y: -0.2, z: -0.2 }}
+              scrollSpeed={2.5}
+            ></Model>
+          </>
+        )}
       </div>
     </div>
   );

@@ -57,6 +57,12 @@
   }
 }
 
+@media (min-width: 1921px) {
+  .big-title h1{
+    font-size: 80px !important;
+  }
+}
+
 @keyframes titleIn {
   from {
     clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);

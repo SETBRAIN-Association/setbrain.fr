@@ -10,4 +10,18 @@ module.exports = {
   images: {
     domains: ['res.cloudinary.com', 'codex.so'],
   },
+  async redirects() {
+    return [
+      {
+        source: '/legacy',
+        destination: '/Mentions_Legales_setbrain.fr.pdf',
+        permanent: true,
+      },
+      {
+        source: '/privacy',
+        destination: '/Politique_de_confidentialite_setbrain.fr.pdf',
+        permanent: true,
+      },
+    ];
+  },
 };

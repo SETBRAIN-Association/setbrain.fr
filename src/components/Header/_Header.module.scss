@@ -30,6 +30,9 @@
     font-weight: 700;
     position: absolute;
     left: 3.375vw;
+    display: flex;
+    align-items: center;
+    gap: 12px;
   }
 
   .menu {
@@ -83,8 +86,8 @@
     padding: 3vh 3.51vh;
 
     .logo {
-      font-size: 2.98vh;
       left: 3.51vh;
+      font-size: 0;
     }
   }
 
@@ -168,5 +171,19 @@
         font-size: 3.5vh;
       }
     }
+  }
+}
+
+@media (min-width: 1921px) {
+  .header {
+    padding: 40px
+  }
+
+  .logo {
+    font-size: 38px !important;
+  }
+
+  .menu ul a {
+    font-size: 26px;
   }
 }

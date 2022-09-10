@@ -75,3 +75,14 @@
     }
   }
 }
+
+@media (min-width: 1921px) {
+  .text {
+    width: 500px !important;
+    margin-left: 100px !important;
+
+    .founder-description {
+      font-size: 20px !important;
+    }
+  }
+}

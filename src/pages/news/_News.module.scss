@@ -46,7 +46,7 @@
       &:before {
         content: '';
         position: absolute;
-        width: 0px;
+        width: 0;
         height: 0.3vw;
         background: $white;
         bottom: -0.2vw;
@@ -130,7 +130,7 @@
         &:before {
           content: '';
           position: absolute;
-          width: 0px;
+          width: 0;
           height: 0.3vw;
           background: $white;
           bottom: -0.2vw;
@@ -167,5 +167,49 @@
 
   .articles {
     flex-direction: column;
+  }
+}
+
+@media (min-width: 1921px) {
+  .News {
+    align-items: center;
+    width: min-content;
+    position: relative;
+    gap: 2vw;
+  }
+
+  .last-article {
+    width: fit-content;
+
+    .texts {
+      flex: none;
+
+      span {
+        font-size: 16px;
+        line-height: 18px;
+      }
+
+      h1 {
+        font-size: 82px;
+        line-height: 88px;
+      }
+
+      p {
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: normal;
+      }
+    }
+
+    .image {
+      flex: none;
+      width: 772px !important;
+      height: 588px;
+    }
+  }
+
+  .articles {
+    width: fit-content;
+    gap: 4.2vw;
   }
 }

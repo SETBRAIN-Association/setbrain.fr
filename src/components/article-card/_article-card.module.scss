@@ -39,7 +39,7 @@
       &:before {
         content: '';
         position: absolute;
-        width: 0px;
+        width: 0;
         height: 0.2vw;
         background: $white;
         bottom: -0.2vw;
@@ -120,9 +120,40 @@
       width: 86px;
       height: 86px;
 
-      box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 19px rgba(0, 0, 0, 0.5);
 
       border-radius: 16px;
+    }
+  }
+}
+
+@media (min-width: 1921px) {
+  .article-card {
+    width: 400px;
+
+    .texts {
+      gap: 0.5vw !important;
+
+      span {
+        font-size: 16px;
+        line-height: 18px;
+      }
+
+      h1 {
+        font-size: 38px;
+        line-height: 44px;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 36px;
+      }
+    }
+
+    .image {
+      width: 100%;
+      height: 366px;
     }
   }
 }

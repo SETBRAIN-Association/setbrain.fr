@@ -1,5 +1,10 @@
 @import 'src/assets/variables';
 
+.disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .project-card {
   border-radius: 48px;
   position: relative;
@@ -13,7 +18,7 @@
 
   .inner {
     background: linear-gradient(101.44deg, rgba(69, 75, 86, 0.5) -2.03%, rgba(24, 24, 27, 0.5) 88.56%);
-    box-shadow: 0px 21px 57px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 21px 57px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(36px);
     padding: 3.125vw;
 
@@ -40,10 +45,11 @@
 
   .background {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 100% !important;
+    left: 50% !important;
+    transform: translate(-50%, -30%);
+    min-width: 110% !important;
+    min-height: 150% !important;
     filter: blur(7px);
   }
 }
@@ -76,5 +82,26 @@
     padding: 0;
     border-radius: 24px;
     overflow: visible;
+  }
+}
+
+@media (min-width: 1921px) {
+  .project-card {
+    width: 1720px !important;
+    height: 900px;
+    padding: 100px 108px !important;
+
+    .inner {
+      border-radius: 40px;
+
+      .description {
+        font-size: 28px !important;
+        width: 500px;
+      }
+    }
+  }
+
+  .background {
+    object-fit: cover;
   }
 }

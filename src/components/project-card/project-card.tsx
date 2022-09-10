@@ -8,9 +8,16 @@ export type ProjectCardProps = {
   position: 'left' | 'right';
   children: ReactNode;
   color: string;
+  disabled?: boolean;
 };
 
-export const ProjectCard = ({ children, image, position, color }: ProjectCardProps) => {
+export const ProjectCard = ({
+  children,
+  image,
+  position,
+  color,
+  disabled = false,
+}: ProjectCardProps) => {
   const projectCardRef = useRef(null);
 
   useEffect(() => {
@@ -26,10 +33,11 @@ export const ProjectCard = ({ children, image, position, color }: ProjectCardPro
 
   return (
     <div
-      className={styles['project-card']}
+      className={styles['project-card'] + (disabled ? ' ' + styles['disabled'] : '')}
       style={{ justifyContent: position, boxShadow: '0 0 124px rgba(' + color + ', 0.24)' }}
       ref={projectCardRef}
-      data-scroll='true' data-scroll-speed='0.5'
+      data-scroll='true'
+      data-scroll-speed='0.5'
     >
       <Image className={styles['background']} src={image} layout='fill'></Image>
       <div className={styles['inner']}>{children}</div>
