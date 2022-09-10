@@ -41,6 +41,10 @@
           text-decoration: none;
           font-weight: 600;
           font-size: 1.125vw;
+
+          &:hover {
+            color: #959595;
+          }
         }
 
         .icon {
@@ -57,8 +61,12 @@
 
 @media (max-width: 768px) {
   .contact-informations {
+    width: 100%;
+    align-items: center;
 
-    //TODO: 3D with Threejs
+    .illustration {
+      display: none;
+    }
 
     .form {
       padding: 2.66vh;

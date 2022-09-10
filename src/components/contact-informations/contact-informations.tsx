@@ -5,6 +5,16 @@ import { Model } from '../Model/Model';
 
 export const ContactInformations = () => {
   const cardRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if(window.innerWidth < 768) setIsMobile(true);
+
+    window.addEventListener('resize', () => {
+      if(window.innerWidth < 768) setIsMobile(true);
+      else setIsMobile(false);
+    });
+  });
 
   const [isWide, setIsWide] = useState(false);
 
