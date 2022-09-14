@@ -42,16 +42,6 @@
       width: 20vw;
     }
   }
-
-  .background {
-    position: absolute;
-    top: 100% !important;
-    left: 50% !important;
-    transform: translate(-50%, -30%);
-    min-width: 110% !important;
-    min-height: 150% !important;
-    filter: blur(7px);
-  }
 }
 
 @media (max-width: 768px) {
@@ -60,10 +50,8 @@
     .inner {
       gap: 1.9900497512437811vh !important;
       padding: 3.9800995024875623vh;
-    }
-
-    .background {
-      display: none;
+      background: none;
+      backdrop-filter: none;
     }
 
     .logo img{

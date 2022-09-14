@@ -18,7 +18,11 @@ export default function Projects() {
           <span>Nos projets</span>
         </h1>
       </BigTitle>
-      <ProjectCard image='/Devsnews.svg' position='right' color='239, 203, 104'>
+      <ProjectCard
+        backgroundColor={'linear-gradient(297.24deg, #FBAB7E 8.25%, #F7CE68 91.76%)'}
+        position='right'
+        color='239, 203, 104'
+      >
         <div className={projects['description']}>
           <div style={{ width: '20vw', height: '5vw', position: 'relative' }}>
             <Image src='/Logo-Devsnews.svg' alt='Devsnews Logo' layout='fill'></Image>
@@ -32,7 +36,13 @@ export default function Projects() {
         </div>
         <Button icon='fi-sr-interactive' label='En savoir plus'></Button>
       </ProjectCard>
-      <ProjectCard image='/Stream-assistant.png' position='left' color='74, 58, 215'>
+      <ProjectCard
+        backgroundColor={
+          'radial-gradient(156.07% 224.28% at -16.47% 144.8%, #050DC6 0.2%, #BB86FC 100%)'
+        }
+        position='left'
+        color='74, 58, 215'
+      >
         <div className={projects['description']}>
           <div style={{ width: '30vw', height: '8vw', position: 'relative' }}>
             <Image
@@ -49,7 +59,12 @@ export default function Projects() {
         </div>
         <Button icon='fi-sr-interactive' label='En savoir plus'></Button>
       </ProjectCard>
-      <ProjectCard image='/Wiclass.svg' position='right' color='14, 159, 110' disabled={true}>
+      <ProjectCard
+        backgroundColor={'linear-gradient(145.96deg, #18D1C5 11.24%, #239A5A 99.84%)'}
+        position='right'
+        color='14, 159, 110'
+        disabled={true}
+      >
         <div className={projects['logo']}>
           <div style={{ width: '20vw', height: '5vw', position: 'relative' }}>
             <Image src='/Wiclass-logo.svg' alt='Wiclass Logo' layout='fill'></Image>
