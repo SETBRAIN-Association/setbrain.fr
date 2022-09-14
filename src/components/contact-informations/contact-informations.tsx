@@ -28,32 +28,25 @@ export const ContactInformations = () => {
               className={styles['icon']}
               style={{ backgroundImage: 'url(/discord.svg)' }}
             ></span>
-            <a href=''>Discord</a>
+            <a href='https://discord.gg/cB4MvF8'>Discord</a>
           </div>
           <div className={styles['media']}>
             <span className={styles['icon']} style={{ backgroundImage: 'url(/gmail.svg)' }}></span>
-            <a href=''>Gmail</a>
+            <a href='mailto:contact@setbrain.fr'>Gmail</a>
           </div>
           <div className={styles['media']}>
             <span
               className={styles['icon']}
               style={{ backgroundImage: 'url(/instagram.svg)' }}
             ></span>
-            <a href=''>Instagram</a>
+            <a href='https://www.instagram.com/setbrainasso/'>Instagram</a>
           </div>
           <div className={styles['media']}>
             <span
               className={styles['icon']}
               style={{ backgroundImage: 'url(/twitter.svg)' }}
             ></span>
-            <a href=''>Twitter</a>
-          </div>
-          <div className={styles['media']}>
-            <span
-              className={styles['icon']}
-              style={{ backgroundImage: 'url(/facebook.svg)' }}
-            ></span>
-            <a href=''>Facebook</a>
+            <a href='https://twitter.com/SetbrainAsso'>Twitter</a>
           </div>
         </div>
       </div>
