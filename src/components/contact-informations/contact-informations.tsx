@@ -5,29 +5,16 @@ import { Model } from '../Model/Model';
 
 export const ContactInformations = () => {
   const cardRef = useRef(null);
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    if (window.innerWidth < 768) setIsMobile(true);
-
-    window.addEventListener('resize', () => {
-      if (window.innerWidth < 768) setIsMobile(true);
-      else setIsMobile(false);
-    });
-  });
-
   const [isWide, setIsWide] = useState(false);
 
   useEffect(() => {
+    gsap.from(cardRef.current, { opacity: 0, marginTop: 0, duration: 1 });
     if (window.innerWidth > 1920) setIsWide(true);
 
     window.addEventListener('resize', () => {
       if (window.innerWidth > 1920) setIsWide(true);
       else setIsWide(false);
     });
-
-    gsap.from(cardRef.current, { opacity: 0, marginTop: 0, duration: 1 });
   });
 
   return (
