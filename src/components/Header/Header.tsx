@@ -10,10 +10,7 @@ export const Header = () => {
   }
 
   return (
-    <div
-      className={hamburgerActive ? styles.active + ' ' + styles.header : styles.header}
-      onClick={toggleMenu}
-    >
+    <div className={hamburgerActive ? styles.active + ' ' + styles.header : styles.header}>
       <Link href='/'>
         <a className={styles['logo']}>
           <img src='/Logo_Mobile.svg' alt='logo setbrain' />
@@ -36,7 +33,7 @@ export const Header = () => {
           </Link>
         </ul>
       </nav>
-      <div className={styles['hamburger']}>
+      <div className={styles['hamburger']} onClick={toggleMenu}>
         <span></span>
         <span></span>
         <span></span>
