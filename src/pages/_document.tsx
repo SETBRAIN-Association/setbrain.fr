@@ -31,7 +31,6 @@ export default function Document() {
         `,
           }}
         ></Script>
-        <title>Set Brain</title>
       </Head>
       <body>
         <Main />
