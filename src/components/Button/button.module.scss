@@ -58,6 +58,14 @@
 
 @media (min-width: 1921px) {
   .button {
-    font-size: 25px;
+    padding: 12px 20px;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+  }
+
+  .icon {
+    width: 24px !important;
+    height: 24px !important;
   }
 }

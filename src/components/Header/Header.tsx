@@ -13,7 +13,7 @@ export const Header = () => {
     <div className={hamburgerActive ? styles.active + ' ' + styles.header : styles.header}>
       <Link href='/'>
         <a className={styles['logo']}>
-          <img src='/Logo_Mobile.svg' height='45px' width='40px' alt='logo setbrain' />
+          <img src='/Logo_Mobile.svg' height='47px' width='42px' alt='logo setbrain' />
           SetBrain.
         </a>
       </Link>

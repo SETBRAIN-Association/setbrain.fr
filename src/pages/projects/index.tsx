@@ -23,7 +23,7 @@ export default function Projects() {
         position='right'
         color='239, 203, 104'
       >
-        <div className={projects['description']}>
+        <div className={projects['logo']}>
           <div style={{ width: '20vw', height: '5vw', position: 'relative' }}>
             <Image src='/Logo-Devsnews.svg' alt='Devsnews Logo' layout='fill'></Image>
           </div>
@@ -43,7 +43,7 @@ export default function Projects() {
         position='left'
         color='74, 58, 215'
       >
-        <div className={projects['description']}>
+        <div className={projects['logo']}>
           <div style={{ width: '30vw', height: '8vw', position: 'relative' }}>
             <Image
               src='/Stream-assistant-logo.svg'

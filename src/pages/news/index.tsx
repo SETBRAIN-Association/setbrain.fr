@@ -6,12 +6,32 @@ import { convertToDateString } from '../../utils/time';
 import { ArticleCard } from '../../components/article-card/article-card';
 import Link from 'next/link';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 
 export type NewsProps = {
   articles: Article[];
 };
 
 export default function News({ articles }: NewsProps) {
+  const router = useRouter();
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth < 768) setIsMobile(true);
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth < 768) setIsMobile(true);
+      else setIsMobile(false);
+    });
+  });
+
+  const redirectToLastArticle = (event: any): any => {
+    event.preventDefault();
+    router.push('news/' + articles[0]._id);
+  };
+
   return (
     <div className={styles['News']} data-scroll-section='true'>
       <Head>
@@ -23,8 +43,13 @@ export default function News({ articles }: NewsProps) {
         </h1>
       </BigTitle>
 
-      <div className={styles['last-article']} data-scroll='true' data-scroll-speed='0.5'>
-        <div className={styles['image']}>
+      <div
+        className={styles['last-article']}
+        data-scroll='true'
+        data-scroll-speed='0.5'
+        onClick={isMobile ? redirectToLastArticle : undefined}
+      >
+        <div className={styles['image']} onClick={redirectToLastArticle}>
           <Image src={articles[0].image} layout='fill' objectFit='cover'></Image>
         </div>
         <div className={styles['texts']}>

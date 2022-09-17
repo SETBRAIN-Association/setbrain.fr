@@ -75,16 +75,23 @@
 
 @media (min-width: 1921px) {
   .project-card {
-    width: 1720px !important;
-    height: 900px;
-    padding: 100px 108px !important;
+    width: 1196px !important;
+    height: 823px;
+    padding: 0 70px;
+    justify-content: center;
 
     .inner {
       border-radius: 40px;
+      padding: 50px;
 
       .description {
-        font-size: 28px !important;
-        width: 500px;
+        font-size: 24px !important;
+        width: 429px;
+      }
+
+      .logo div {
+        width: 396px !important;
+        height: 120px !important;
       }
     }
   }

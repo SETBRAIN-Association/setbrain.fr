@@ -1,14 +1,19 @@
 @import "src/assets/variables";
 
+.footer-container {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background: $black;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
   font-family: Sora, sans-serif;
   color: $white;
-  background: $black;
   padding: 2.375vw 7.625vw;
   gap: 2.8125vw;
-  width: 100%;
   box-sizing: border-box;
   position: relative;
 
@@ -126,6 +131,57 @@
     .separator {
       height: 3.0112923462986196vh! important;
       transform: rotateZ(90deg);
+    }
+  }
+}
+
+@media (min-width: 1921px) {
+  .footer {
+    padding: 64px 122px 54px;
+    gap: 2.8125vw;
+
+    .top {
+      .links{
+        gap: 7.625vw;
+      }
+
+      .category {
+        gap: 0.875vw !important;
+
+        h1 {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 30px;
+        }
+
+        ul li a {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 140%;
+        }
+
+        .sub-category {
+          gap: 14px !important;
+
+          h1 {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 23px;
+          }
+        }
+      }
+    }
+
+    .bottom {
+      gap: 12px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 140%;
+
+      .separator {
+        height: 1.5vw;
+        width: 0.125vw;
+      }
     }
   }
 }

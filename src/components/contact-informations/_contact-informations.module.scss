@@ -98,3 +98,47 @@
     }
   }
 }
+
+@media (min-width: 1921px) {
+  .contact-informations {
+    gap: 170px;
+    flex-direction: row;
+    width: 100%;
+
+    .form {
+      padding: 25px 32px;
+      width: 429px;
+
+      h1 {
+        font-size: 24px;
+        line-height: 30px;
+        width: fit-content;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 23px;
+        width: fit-content;
+      }
+
+      .contacts {
+        margin-top: 1.5vw;
+        gap: 12px;
+
+        .media {
+          gap: 12px;
+
+          a {
+            font-size: 18px;
+            line-height: 23px;
+          }
+
+          .icon {
+            width: 48px;
+            height: 48px;
+          }
+        }
+      }
+    }
+  }
+}

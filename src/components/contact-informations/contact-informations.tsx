@@ -55,15 +55,15 @@ export const ContactInformations = () => {
           <>
             <Model
               model={'/pc.gltf'}
-              size={{ height: '70%', width: '40%', z: -2 }}
-              position={{ left: '50%', top: '-10%' }}
+              size={{ height: '80%', width: '50%', z: -2 }}
+              position={{ left: '40%', top: '-10%' }}
               rotation={{ x: -0.3, y: 0.2, z: 0.1 }}
               scrollSpeed={1}
             ></Model>
             <Model
               model={'/rocket.gltf'}
-              size={{ height: '80%', width: '40%', z: -5 }}
-              position={{ left: '75%', top: '30%' }}
+              size={{ height: '90%', width: '50%', z: -5 }}
+              position={{ left: '65%', top: '20%' }}
               rotation={{ x: -0.3, y: -0.2, z: -0.2 }}
               scrollSpeed={2.5}
             ></Model>
