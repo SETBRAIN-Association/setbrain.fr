@@ -53,7 +53,7 @@ export default function About() {
         </h1>
       </BigTitle>
       <div className={styles['founder-cards']}>
-        <FounderCard image='' founderName='Syd Chauviteau'>
+        <FounderCard image='/1662818108749.jpg' founderName='Syd Chauviteau'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
           ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
@@ -61,7 +61,10 @@ export default function About() {
           sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
           est laborum.
         </FounderCard>
-        <FounderCard image='' founderName='Emmanuel LINGUET'>
+        <FounderCard
+          image='/Photo_de_profil_professionel_emmanuel.webp'
+          founderName='Emmanuel LINGUET'
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
           ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in

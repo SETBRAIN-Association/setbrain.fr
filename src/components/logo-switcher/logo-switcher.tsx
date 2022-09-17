@@ -6,7 +6,7 @@ export const LogoSwitcher = () => {
   const backgrounds = [
     { class: '1', background: 'linear-gradient(225deg, #AC32E4 0%, #7918F2 47.87%, #4801FF 100%)' },
     { class: '2', background: 'linear-gradient(#040404, #040404)' },
-    { class: '3', background: 'url(/leaf-background.png)' },
+    { class: '3', background: 'url(/leaf-background.webp)' },
   ];
   const [currentBackground, setCurrentBackground] = useState(0);
 

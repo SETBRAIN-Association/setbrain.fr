@@ -1,12 +1,12 @@
 @import 'src/assets/variables';
 
 .FounderCard {
-
   .image {
-    width: 24.21875vw;
-    height: 16.09375vw;
+    width: 36.3vw;
+    height: 24vw;
     background: #C4C4C4;
     border-radius: 32px;
+    background-size: cover;
   }
 
   .text {
@@ -23,7 +23,7 @@
     border-radius: 20px;
 
     margin-top: -8.854166666666666vw;
-    margin-left: 7.395833333333333vw;
+    margin-left: 12vw;
 
     .founder-name {
       font-weight: 700;
