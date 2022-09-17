@@ -77,12 +77,22 @@
 }
 
 @media (min-width: 1921px) {
-  .text {
-    width: 500px !important;
-    margin-left: 100px !important;
+  .image{
+    width: 466px !important;
+    height: 309px !important;
+  }
 
-    .founder-description {
-      font-size: 20px !important;
+  .text {
+    width: 406px !important;
+    margin-left: 100px !important;
+    padding: 25px 32px !important;
+
+    .founder-name {
+      font-size: 18px !important;
+    }
+
+    .founder-description, .founder-role {
+      font-size: 12px !important;
     }
   }
 }

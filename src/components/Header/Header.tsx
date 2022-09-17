@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styles from './_Header.module.scss';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export const Header = () => {
   const [hamburgerActive, setHamburgerActive] = useState(false);
@@ -14,7 +13,7 @@ export const Header = () => {
     <div className={hamburgerActive ? styles.active + ' ' + styles.header : styles.header}>
       <Link href='/'>
         <a className={styles['logo']}>
-          <Image src='/Logo_Mobile.svg' height='45px' width='40px' alt='logo setbrain' />
+          <img src='/Logo_Mobile.svg' height='45px' width='40px' alt='logo setbrain' />
           SetBrain.
         </a>
       </Link>

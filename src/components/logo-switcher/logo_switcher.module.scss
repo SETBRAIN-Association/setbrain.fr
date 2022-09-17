@@ -1,0 +1,46 @@
+@import 'src/assets/variables';
+
+.logo-switcher {
+  width: 34.25vw;
+  height: 30.3vw;
+  position: relative;
+  border-radius: 40px;
+  overflow: hidden;
+
+  .logo{
+    min-width: 10.125vw !important;
+    min-height: 11.5vw !important;
+    z-index: 10;
+  }
+
+  .backgrounds {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-switcher {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4.5/4;
+
+    .logo{
+      min-width: 12.9vh !important;
+      min-height: 14.84vh !important;
+      z-index: 2;
+    }
+  }
+}
+
+@media (min-width: 1921px) {
+  .logo-switcher {
+    width: 548px;
+    height: 485px;
+
+    .logo {
+      min-width: 162px !important;
+      min-height: 185px !important;
+    }
+  }
+}

@@ -3,12 +3,13 @@ const path = require('path');
 
 // eslint-disable-next-line no-undef
 module.exports = {
+  reactStrictMode: false,
   sassOptions: {
     // eslint-disable-next-line no-undef
-    includePaths: [path.join(__dirname, 'styles')]
+    includePaths: [path.join(__dirname, 'styles')],
   },
   images: {
-    domains: ['res.cloudinary.com']
+    domains: ['res.cloudinary.com'],
   },
   async redirects() {
     return [
@@ -25,6 +26,6 @@ module.exports = {
     ];
   },
   eslint: {
-    ignoreDuringBuild: true
-  }
+    ignoreDuringBuild: true,
+  },
 };
