@@ -1,0 +1,16 @@
+.Home {
+  height: 90vh;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 1921px) {
+  .Home {
+    width: 1920px;
+  }
+}
+

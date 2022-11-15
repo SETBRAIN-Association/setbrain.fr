@@ -1,0 +1,71 @@
+@import "src/assets/variables";
+
+.button {
+  font-family: Poppins, sans-serif;
+  font-size: 1.2vw;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  border: none;
+  box-shadow: 0 0 14px $blue;
+  border-radius: 8px;
+  padding: 0.625vw 0.8125vw;
+  cursor: pointer;
+  width: fit-content;
+
+  .icon {
+    width: 1.5vw;
+    height: 1.5vw;
+    background: $white;
+    mask-position: center;
+    mask-size: 100%;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    box-shadow: none;
+  }
+}
+
+.primary {
+  background: $blue;
+  color: $white;
+
+  &:disabled {
+    background: #3671d5;
+    color: #c1bbbb;
+  }
+}
+
+@media (max-width: 768px) {
+  .button {
+    gap: 1.9900497512437811vh;
+    font-size: 1.492537313432836vh !important;
+    padding: 1.243781094527363vh 1.6169154228855722vh;
+  }
+
+  .icon {
+    font-size: 2.2388059701492535vh !important;
+    width: 2.2388059701492535vh !important;
+    height: 2.2388059701492535vh !important;
+  }
+}
+
+@media (min-width: 1921px) {
+  .button {
+    padding: 12px 20px;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+  }
+
+  .icon {
+    width: 24px !important;
+    height: 24px !important;
+  }
+}

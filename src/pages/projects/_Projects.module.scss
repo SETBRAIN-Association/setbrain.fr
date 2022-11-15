@@ -1,0 +1,14 @@
+.Projects {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 7vw;
+  padding-bottom: 4vw;
+}
+
+
+@media (min-width: 1921px) {
+  .Projects {
+    gap: 4vw;
+  }
+}

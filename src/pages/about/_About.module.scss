@@ -1,0 +1,102 @@
+@import "src/assets/variables";
+
+.About {
+  display: flex;
+  flex-direction: column;
+  gap: 8vw;
+  padding-bottom: 5vw;
+
+  .founder-cards {
+    display: flex;
+    gap: 5vw;
+  }
+
+  .association {
+    display: flex;
+    gap: 2.5vw;
+    position: relative;
+
+    .title {
+      font-weight: 700;
+      font-size: 72px;
+      line-height: 91px;
+      letter-spacing: -0.02em;
+      color: $white;
+      margin-top: 22px;
+    }
+
+    .text {
+      position: absolute;
+      background: linear-gradient(286.1deg, rgba(212, 212, 216, 0.3) 5.97%, rgba(212, 212, 216, 0.126) 104.79%);
+      backdrop-filter: blur(34.5px);
+      /* Note: backdrop-filter has minimal browser support */
+
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 700px;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 30px;
+      align-items: flex-start;
+      padding: 25px 32px;
+      gap: 10px;
+      color: $white;
+      top: 50%;
+      left: 35%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .founder-cards {
+    flex-direction: column;
+    gap: 4.7vh !important;
+  }
+
+  .association {
+    display: flex;
+    flex-direction: column;
+    padding: 0 32px 50px;
+    gap: 0;
+
+    .title {
+      font-weight: 700 !important;
+      font-size: 48px !important;
+      line-height: 60px !important;
+    }
+
+    .text {
+      position: static !important;
+      font-weight: 400 !important;
+      font-size: 3.04vh !important;
+      line-height: 30px !important;
+      background: none !important;
+      width: 100% !important;
+      padding: 0 !important;
+    }
+  }
+}
+
+@media (min-width: 1921px) {
+  .About {
+    width: min-content;
+    gap: 134px;
+  }
+
+  .founder-cards {
+    gap: 52px !important;
+    justify-content: center;
+  }
+
+  .association {
+    width: 1179px !important;
+
+    .text {
+      bottom: 0 !important;
+      right: 0 !important;
+    }
+  }
+
+}

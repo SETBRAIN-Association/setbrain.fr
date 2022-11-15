@@ -1,0 +1,85 @@
+@import 'src/assets/variables';
+
+.article-view {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: min-content;
+  padding-bottom: 80px;
+}
+
+.top-infos {
+  .title {
+    color: $white;
+    font-weight: 600;
+    font-size: 4vw;
+    line-height: 5vw;
+  }
+
+  .date {
+    color: $white;
+  }
+}
+
+.content {
+  width: 80vw;
+  color: $white;
+
+  .image {
+    max-width: 100%;
+    position: relative;
+    aspect-ratio: 16 / 9;
+  }
+
+  h1 {
+    font-size: 2.5vw;
+  }
+
+  h2 {
+    font-size: 1.8vw;
+  }
+
+  h3 {
+    font-size: 1.25vw;
+  }
+
+  p {
+    font-weight: 300;
+  }
+
+  hr {
+    width: 50vw;
+    margin: 40px auto;
+  }
+
+  a {
+    color: $green;
+  }
+
+  mark {
+    color: $white;
+    background: rgba($green, 0.5);
+  }
+}
+
+@media (max-width: 768px) {
+  .top-infos .title {
+    font-size: 7vh;
+    line-height: 14vw;
+  }
+
+  .content {
+    h1 {
+      font-size: 5vh;
+    }
+
+    h2 {
+      font-size: 3.5vh;
+    }
+
+    h3 {
+      font-size: 2.5vh;
+    }
+  }
+}
+

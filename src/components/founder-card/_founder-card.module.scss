@@ -1,0 +1,99 @@
+@import 'src/assets/variables';
+
+.FounderCard {
+  .image {
+    width: 36.3vw;
+    height: 24vw;
+    background: #C4C4C4;
+    border-radius: 32px;
+    background-size: cover;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    color: $white;
+    background: linear-gradient(286.1deg, rgba(212, 212, 216, 0.3) 5.97%, rgba(212, 212, 216, 0.126) 104.79%);
+    backdrop-filter: blur(69px);
+
+    width: 23.125vw;
+    padding: 1.5vw 2vw;
+    border-radius: 20px;
+
+    margin-top: -8.854166666666666vw;
+    margin-left: 12vw;
+
+    .founder-name {
+      font-weight: 700;
+      font-size: 1.5vw;
+    }
+
+    .founder-role {
+      font-weight: 600;
+      font-size: 1vw;
+    }
+
+    .founder-description {
+      font-weight: 300;
+      font-size: 1vw;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .FounderCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .image{
+      width: 35.854922279792746vh;
+      height: 29.22279792746114vh;
+    }
+
+    .text {
+      padding: 3.31vh 2.48vh;
+      width: 28vh;
+      margin: -14.196891191709845vh 0 0;
+
+      .founder-name {
+        font-weight: 600;
+        font-size: 1.8652849740932642vh;
+      }
+
+      .founder-role {
+        font-weight: 600;
+        font-size: 1.2435233160621761vh;
+      }
+
+      .founder-description {
+        font-weight: 400;
+        font-size: 1.2435233160621761vh;
+      }
+    }
+  }
+}
+
+@media (min-width: 1921px) {
+  .image{
+    width: 466px !important;
+    height: 309px !important;
+  }
+
+  .text {
+    margin-top: -150px !important;
+    width: 406px !important;
+    margin-left: 100px !important;
+    padding: 25px 32px !important;
+
+    .founder-name {
+      font-size: 18px !important;
+    }
+
+    .founder-description, .founder-role {
+      font-size: 12px !important;
+    }
+  }
+}
