@@ -8,7 +8,6 @@ export const ContactInformations = () => {
   const [isWide, setIsWide] = useState(false);
 
   useEffect(() => {
-    gsap.from(cardRef.current, { opacity: 0, marginTop: 0, duration: 1 });
     if (window.innerWidth > 1920) setIsWide(true);
 
     window.addEventListener('resize', () => {
