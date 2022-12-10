@@ -14,7 +14,7 @@ export const Header = () => {
     <div className={hamburgerActive ? styles.active + ' ' + styles.header : styles.header}>
       <Link href='/'>
         <a className={styles['logo']}>
-          <Image src='/Logo_Mobile.svg' height='47px' width='42px' alt='logo setbrain' />
+          <Image src='/Logo_Mobile.png' height='47px' width='42px' alt='logo setbrain' />
           SetBrain.
         </a>
       </Link>

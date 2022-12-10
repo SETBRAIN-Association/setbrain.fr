@@ -33,6 +33,11 @@
     display: flex;
     align-items: center;
     gap: 18px;
+
+    img {
+      min-height: 80% !important;
+      min-width: 82% !important;
+    }
   }
 
   .menu {
