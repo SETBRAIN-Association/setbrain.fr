@@ -3,6 +3,8 @@ import styles from './_Footer.module.scss';
 import Link from 'next/link';
 
 export const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className={styles['footer-container']} data-scroll-section='true'>
       <div className={styles['footer']}>
@@ -95,7 +97,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className={styles['bottom']}>
-          <span> © Set Brain - 2022 </span>
+          <span> © Set Brain - {currentYear} </span>
           <div className={styles['separator']}></div>
           <Link href='/Mentions_Legales_setbrain.fr.pdf'>
             <a>Mentions légales</a>
