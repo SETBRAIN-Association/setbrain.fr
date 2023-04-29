@@ -8,6 +8,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
+import { getEnvironmentURI } from '../../utils/environment';
 
 export type NewsProps = {
   articles: Article[];
@@ -71,7 +72,7 @@ export default function News({ articles }: NewsProps) {
 }
 
 export async function getServerSideProps() {
-  const data = await fetch('/api/articles');
+  const data = await fetch(getEnvironmentURI() + '/api/articles');
   const json = await data.json();
   const articles = json.articles;
 
