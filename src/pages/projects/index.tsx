@@ -29,10 +29,9 @@ export default function Projects() {
           </div>
         </div>
         <div className={projects['description']}>
-          DevsNews est notre second projet, il s’agira d’une émission hebdomadaire sur Twitch qui
-          seront un mélange entre news et pratiques informatiques. L’émission sera secondée par un
-          site web sur lequel vous retrouverez des articles, des rediffusions de nos lives et des
-          best of !
+            DevsNews est une émission hebdomadaire sur Twitch qui mêlera news et pratiques informatiques.
+            L&apos;émission sera accompagnée d&apos;un site web où vous pourrez retrouver des articles,
+            des rediffusions de nos lives et des meilleures parties.
         </div>
         <Button icon='fi-sr-interactive' label='En savoir plus' href='https://devsnews.fr'></Button>
       </ProjectCard>
@@ -53,9 +52,9 @@ export default function Projects() {
           </div>
         </div>
         <div className={projects['description']}>
-          Stream assistant est notre projet le plus récent, comme sont nom l’indique, c’est
-          assistant de stream plus précisément un outils de production à distance. Il permet de
-          contrôler le logiciel OBS à distance partout depuis votre navigateur web !
+            Stream assistant est un outil de production à distance pour les streams.
+            Il permet de contrôler le logiciel OBS à distance depuis n&apos;importe quel navigateur web.
+            Ce qui signifie que vous pouvez gérer votre stream depuis n&apos;importe où, à tout moment.
         </div>
         <Button icon='fi-sr-interactive' label='En savoir plus' href="streamassistant.com"></Button>
       </ProjectCard>
@@ -71,9 +70,10 @@ export default function Projects() {
           </div>
         </div>
         <div className={projects['description']}>
-          Wiclass est notre premier projet très ambitieux, avec celui-ci nous avons comme but de
-          révolutionner l’education. Il s’agira très simplement d’une interface, entièrement en
-          ligne, d’administration et de gestion dédiée aux enseignement secondaire.
+            Wiclass est notre premier projet ambitieux visant à révolutionner l&apos;éducation.
+            Il s&apos;agit d&apos;une interface en ligne pour la gestion et l&apos;administration des enseignements secondaires.
+            Notre objectif est de rendre l&apos;enseignement plus accessible et plus facile à gérer pour les enseignants et les élèves.
+            Nous espérons que Wiclass changera la façon dont l&apos;éducation est gérée et donnera une meilleure expérience d&apos;apprentissage aux élèves.
         </div>
         <Button
           icon='fi-sr-interactive'

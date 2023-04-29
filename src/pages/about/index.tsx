@@ -39,12 +39,12 @@ export default function About() {
         <div
           className={styles['text']}
           data-scroll='true'
-          data-scroll-speed={isMobile ? '1' : '2.5'}
+          data-scroll-speed={isMobile ? '1' : '2'}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Notre objectif principal est d&apos;innover constamment.
+          Nous croyons que l&apos;innovation est la clé pour offrir des expériences de qualité supérieure à nos utilisateurs.
+          Nous sommes toujours à la recherche de nouvelles idées et de moyens de surprendre et d&apos;étonner notre audience avec des fonctionnalités novatrices.
+          Nous sommes passionnés par notre travail et nous espérons que vous serez également enthousiasmé(e) par nos innovations.
         </div>
       </div>
       <BigTitle position='left'>
@@ -53,24 +53,18 @@ export default function About() {
         </h1>
       </BigTitle>
       <div className={styles['founder-cards']}>
-        <FounderCard image='/1662818108749.jpg' founderName='Syd Chauviteau'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.
+        <FounderCard image='/Photo_de_profil_professionel_syd.webp' founderName='Syd Chauviteau'>
+          La création de Set Brain a été une évidence pour moi, en tant que passionné d&apos;informatique depuis mon plus jeune âge.
+          Cela m&apos;a permis d&apos;approfondir mes connaissances plus que je ne l&apos;aurais jamais imaginé.
+          Les progrès réalisés ces deux dernières années m&apos;ont donné l&apos;impulsion nécessaire pour augmenter nos objectifs et nos ressources,
+          et nous sommes maintenant en train de développer notre premier grand projet : Wiclass. Nous sommes impatients de voir ce que l&apos;avenir nous réserve !
         </FounderCard>
         <FounderCard
           image='/Photo_de_profil_professionel_emmanuel.webp'
-          founderName='Emmanuel LINGUET'
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.
+          founderName='Emmanuel LINGUET'        >
+          Depuis mon plus jeune âge, je suis passionné par l&apos;informatique et j&apos;ai passé des années à me perfectionner grâce à des projets personnels et professionnels.
+          La création de Set Brain m&apos;a permis de mettre en pratique mes compétences acquises et d&apos;en développer de nouvelles. Cela m&apos;a également donné l&apos;opportunité de partager mes connaissances et d&apos;aider les autres à apprendre.
+          Je suis très heureux d&apos;avoir créé Set Brain et j&apos;ai hâte de voir ce que l&apos;avenir nous réserve !
         </FounderCard>
       </div>
     </div>
