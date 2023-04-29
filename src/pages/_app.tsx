@@ -7,6 +7,7 @@ import { Footer } from '../components/Footer/Footer';
 import { Header } from '../components/Header/Header';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
 import ReactGA from 'react-ga4';
+import Head from 'next/head';
 
 export default function App({ Component, pageProps }: AppProps) {
 
@@ -41,6 +42,9 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
+      <Head>
+        <title>Setbrain - Association</title>
+      </Head>
       <Header></Header>
       <RLSProvider
         options={{

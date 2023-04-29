@@ -30,7 +30,7 @@ export default function ArticleView({ article }: ArticleViewProps) {
   return (
     <div className={styles['article-view']} data-scroll-section='true'>
       <Head>
-        <title>{article.title} | Set Brain</title>
+        <title>{article.title}</title>
       </Head>
       <div className={styles['top-infos']}>
         <h1 className={styles['title']}>{article.title}</h1>
