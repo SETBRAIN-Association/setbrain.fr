@@ -11,13 +11,17 @@ export type ArticleViewProps = {
 };
 
 export type ImageBlockProps = {
-  file: { url: string };
+  url: string;
+  description: string;
 };
 
 const ImageBlock: RenderFn<ImageBlockProps> = ({ data }: { data: ImageBlockProps }) => {
   return (
-    <div className={styles['image']}>
-      <Image src={data.file.url} layout='fill'></Image>
+    <div className={styles['image-wrapper']}>
+      <div className={styles['image']}>
+        <Image src={data.url} layout='fill'></Image>
+      </div>
+      <p>{data.description ?? ''}</p>
     </div>
   );
 };
@@ -30,7 +34,7 @@ export default function ArticleView({ article }: ArticleViewProps) {
       </Head>
       <div className={styles['top-infos']}>
         <h1 className={styles['title']}>{article.title}</h1>
-        <span className={styles['date']}>{convertToDateString(article.date)}</span>
+        <span className={styles['date']}>{convertToDateString(article.date)} &nbsp;-&nbsp; par l&apos;équipe de Setbrain</span>
       </div>
       <div className={styles['content']}>
         <Blocks
