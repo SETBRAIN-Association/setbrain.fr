@@ -47,14 +47,8 @@
       width: fit-content;
       cursor: pointer;
 
-      &:before {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 0.3vw;
-        background: $white;
-        bottom: -0.2vw;
-        transition: 0.5s;
+      &:hover {
+        text-decoration: underline;
       }
     }
 
@@ -114,14 +108,8 @@
         width: fit-content;
         cursor: pointer;
 
-        &:before {
-          content: '';
-          position: absolute;
-          width: 0;
-          height: 0.3vw;
-          background: $white;
-          bottom: -0.2vw;
-          transition: 0.5s;
+        &:hover {
+          text-decoration: underline;
         }
       }
 

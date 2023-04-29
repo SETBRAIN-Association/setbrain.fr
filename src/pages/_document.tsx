@@ -7,7 +7,6 @@ export default function Document() {
     <Html lang='fr'>
       <Head>
         <meta charSet='UTF-8' />
-        <title>Setbrain - Association</title>
         <meta name='robots' content='index,follow' />
         <meta content='text/html; charset=utf-8' />
         <meta name='language' content='French' />
