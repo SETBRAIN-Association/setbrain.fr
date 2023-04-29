@@ -71,7 +71,7 @@ export default function News({ articles }: NewsProps) {
 }
 
 export async function getServerSideProps() {
-  const data = await fetch('http://localhost:3000/api/articles');
+  const data = await fetch('/api/articles');
   const json = await data.json();
   const articles = json.articles;
 
