@@ -5,6 +5,7 @@ import { convertToDateString } from '../../utils/time';
 import Blocks, { RenderFn } from 'editorjs-blocks-react-renderer';
 import Image from 'next/image';
 import Head from 'next/head';
+import { getEnvironmentURI } from '../../utils/environment';
 
 export type ArticleViewProps = {
   article: Article;
@@ -50,7 +51,7 @@ export default function ArticleView({ article }: ArticleViewProps) {
 
 export async function getServerSideProps(context: GetServerSidePropsContext) {
   const { id } = context.query;
-  const data = await fetch('http://localhost:3000/api/articles/' + id);
+  const data = await fetch(getEnvironmentURI() + '/api/articles/' + id);
   const article = await data.json();
 
   return {
